@@ -10,17 +10,34 @@ interface DefaultThemeinterface {
   };
   typography: {
     bigh1eading: {
-      font: string;
-      weight: number;
-      size: string;
+      fontfamily: string;
+      fontsize: string;
+      fontweight: number;
       lineheight: string;
+      letterspacing: string;
     };
     smileh2eading: {
-      font: string;
-      weight: number;
-      size: string;
-      lineheight: string;
+        fontfamily: string;
+        fontsize: string;
+        fontweight: number;
+        lineheight: string;
+        letterspacing: string;
     };
+    bodyMedium: {
+      fontfamily: string;
+      fontsize: string;
+      fontweight: number;
+      lineheight: string;
+      letterspacing: string;
+    };
+    overlineAllCaps: {
+      fontfamily: string;
+      fontsize: string;
+      fontweight: number;
+      lineheight: string;
+      letterspacing: string;
+    };
+    
   };
 }
 export const defaultTheme: DefaultThemeinterface = {
@@ -35,16 +52,32 @@ export const defaultTheme: DefaultThemeinterface = {
   },
   typography: {
     bigh1eading: {
-      font: "Red Hat Display",
-      weight: 900,
-      size: "64px",
+      fontfamily: "Red Hat Display;",
+      fontsize: "64px",
+      fontweight: 900,
       lineheight: "64px",
+      letterspacing: "0px",
     },
     smileh2eading: {
-      font: "Red Hat Display",
-      weight: 900,
-      size: "40px",
-      lineheight: "44px",
+        fontfamily: "Red Hat Display",
+        fontsize: "40px",
+        fontweight: 900,
+        lineheight: "44px",
+        letterspacing: "0px",
+    },
+    bodyMedium: {
+      fontfamily: "Red Hat Display",
+      fontsize: "18px",
+      fontweight: 500,
+      lineheight: "26px",
+      letterspacing: "0px",
+    },
+    overlineAllCaps: {
+      fontfamily: "Red Hat Display",
+      fontsize: "16px",
+      fontweight: 900,
+      lineheight: "26px",
+      letterspacing: "4px",
     },
   },
 };
